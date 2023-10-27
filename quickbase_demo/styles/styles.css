@@ -10,6 +10,7 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .card-container .card {
   border: 1px solid #363432;
@@ -36,11 +37,9 @@
 .card-container .card .card-content .card-button {
   display: inline-block;
   padding: 8px 15px;
-  background-color: #82934b; /* Match the banner background */
-  color: #000; /* Match the banner text color */
   text-decoration: none;
   border-radius: 0;
-  margin: 30px 15px 15px 15px;
+  margin-top: 15px;
   font-weight: bold;
 }
 
@@ -51,19 +50,45 @@
   font-size: 24px;
 }
 
-.banner.natural {
+.natural {
   background-color: #82934b;
   color: #000;
 }
 
-.banner.historical {
+.historical {
   background-color: #ef9421;
   color: #000;
 }
 
-.banner.monument {
+.monument {
   background-color: #1a6874;
   color: #fff;
+}
+
+.color-natural {
+  color: #82934b;
+}
+
+.color-historical {
+  color: #ef9421;
+}
+
+.color-monument {
+  color: #1a6874;
+}
+
+.card-button.natural:hover {
+  background-color: #1a6874;
+  color: #fff;
+}
+
+.card-button.historical:hover {
+  background-color: #f79b82;
+}
+
+.card-button.monument:hover {
+  background-color: #82934b;
+  color: #000;
 }
 
 /* Responsive styles */

@@ -1,6 +1,4 @@
-$black: #000000;
-$white: #ffffff;
-
+// colors
 $asparagus: #82934b; /* rgb 130, 147, 75 */
 $carrot: #ef9421; /* rgb 239, 148, 33 */
 $chrome: #e2edd7; /* rgb 226, 237, 215 */
@@ -14,6 +12,7 @@ $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	justify-content: space-between;
 
 	.card {
 		border: 1px solid $dune;
@@ -43,11 +42,9 @@ $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 			.card-button {
 				display: inline-block;
 				padding: 8px 15px;
-				background-color: $asparagus; /* Match the banner background */
-				color: #000; /* Match the banner text color */
 				text-decoration: none;
 				border-radius: 0;
-				margin: 30px 15px 15px 15px;
+				margin-top: 15px;
 				font-weight: bold;
 			}
 		}
@@ -60,19 +57,45 @@ $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 	font-size: 24px;
 }
 
-.banner.natural {
+.natural {
 	background-color: $asparagus;
 	color: #000;
 }
 
-.banner.historical {
+.historical {
 	background-color: $carrot;
 	color: #000;
 }
 
-.banner.monument {
+.monument {
 	background-color: $elm;
 	color: #fff;
+}
+
+// text colors
+.color-natural {
+	color: $asparagus;
+}
+
+.color-historical {
+	color: $carrot;
+}
+
+.color-monument {
+	color: $elm;
+}
+
+// card-button hover styles
+.card-button.natural:hover {
+	background-color: $elm;
+	color: #fff;
+}
+.card-button.historical:hover {
+	background-color: $geraldine;
+}
+.card-button.monument:hover {
+	background-color: $asparagus;
+	color: #000;
 }
 
 /* Responsive styles */
