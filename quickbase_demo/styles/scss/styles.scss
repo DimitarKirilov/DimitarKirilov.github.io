@@ -48,8 +48,20 @@ $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 				font-weight: bold;
 			}
 		}
+
+		// featured card styles
 		&.featured {
 			order: -1; /* Featured card appears first */
+			background-color: $elm;
+			color: #fff;
+
+			.card-button {
+				background-color: $chrome;
+				color: #000;
+			}
+			.card-button:hover {
+				background-color: $picton-blue;
+			}
 		}
 	}
 }

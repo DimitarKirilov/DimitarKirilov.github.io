@@ -44,6 +44,15 @@
 }
 .card-container .card.featured {
   order: -1; /* Featured card appears first */
+  background-color: #1a6874;
+  color: #fff;
+}
+.card-container .card.featured .card-button {
+  background-color: #e2edd7;
+  color: #000;
+}
+.card-container .card.featured .card-button:hover {
+  background-color: #47c5e0;
 }
 
 /* Banner styles */

@@ -9,14 +9,8 @@ class CardButton {
 	}
 }
 
-// const test = 1;
-
-// export { test };
-
 // fetcb the parks data
-fetch(
-	"https://raw.githubusercontent.com/DimitarKirilov/DimitarKirilov.github.io/master/quickbase_demo/data/dataset1.json"
-)
+fetch("data/dataset1.json")
 	.then((response) => response.json())
 	.then((json) => {
 		let cardContainer = document.getElementById("card-container");
@@ -54,7 +48,7 @@ fetch(
 
 				// create the card element from the content and append to the card cointainer
 				let card = document.createElement("div");
-				card.className = "card";
+				card.className = "card" + (park.featured ? " featured" : "");
 				card.innerHTML = cardContent;
 				cardContainer.appendChild(card);
 			}
