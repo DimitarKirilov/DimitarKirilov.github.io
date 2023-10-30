@@ -42,6 +42,9 @@
   margin-top: 15px;
   font-weight: bold;
 }
+.card-container .card.featured {
+  order: -1; /* Featured card appears first */
+}
 
 /* Banner styles */
 .banner {

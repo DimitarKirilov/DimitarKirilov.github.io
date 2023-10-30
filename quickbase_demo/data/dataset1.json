@@ -14,7 +14,8 @@
 			"linkText": "Learn More",
 			"body": "Discover how one city could be the Cradle of Liberty, site of the first major battle of American Revolution, and home to many who espoused that freedom can be extended to all.",
 			"image": "https://www.nps.gov/common/uploads/grid_builder/bost/crop16_9/79889BD1-0F7C-4CE8-3EF501B6CDD42702.jpg?width=465&quality=90&mode=crop",
-			"category": "Historical"
+			"category": "Historical",
+			"featured": 1
 		},
 		{
 			"title": "San Francisco Maritime",

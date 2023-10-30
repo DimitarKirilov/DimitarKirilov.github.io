@@ -4,7 +4,7 @@ class CardButton {
 	}
 	create() {
 		return `
-		<a class="card-button ${this.category}" href="${this.link}">${this.linkText}</a>
+		<a class="card-button ${this.category}" href="${this.link}">${this.text}</a>
 		`;
 	}
 }

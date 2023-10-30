@@ -48,6 +48,9 @@ $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 				font-weight: bold;
 			}
 		}
+		&.featured {
+			order: -1; /* Featured card appears first */
+		}
 	}
 }
 /* Banner styles */
