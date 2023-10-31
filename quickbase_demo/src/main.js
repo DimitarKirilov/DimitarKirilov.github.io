@@ -11,14 +11,17 @@ fetch("data/dataset1.json")
 			if (park.image) {
 				// generates the html for the card
 				cardContent = `
-				<div class="banner ${park.category.toLowerCase()}">${park.category}</div>
-					<img src="${park.image}" alt="Card Image">
+				<div class="banner ${park.category.toLowerCase()}">
+					${park.category}
+				</div>
+
+				<img src="${park.image}" alt="Card Image">
+
 				<div class="card-content">
-					<h3 class="card-title color-${park.category.toLowerCase()}">${
-					park.title ? park.title : "National Park"
-				}</h3>
+					<h3 class="card-title color-${park.category.toLowerCase()}">
+						${park.title ? park.title : "National Park"}
+					</h3>
 					<p class="card-text">${park.body}</p>
-			
 				`;
 
 				// add button if there is a link

@@ -12,12 +12,15 @@ $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 
 	.card {
 		border: 1px solid $dune;
 		margin: 15px;
 		max-width: 300px;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: space-between;
 
 		img {
 			width: 100%;
@@ -45,6 +48,8 @@ $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 				text-decoration: none;
 				border-radius: 0;
 				margin-top: 15px;
+				margin-left: 0px;
+
 				font-weight: bold;
 			}
 		}
@@ -116,6 +121,7 @@ $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 /* Responsive styles */
 @media (max-width: 768px) {
 	.card-container {
+		justify-content: center;
 		.card {
 			max-width: 100%;
 
@@ -128,9 +134,10 @@ $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 					font-size: 18px;
 				}
 
-				.card-button {
-					margin: 30px 15px 15px 15px;
-				}
+				// .card-button {
+				// 	margin: 30px 15px 15px 15px;
+
+				// }
 			}
 		}
 	}
